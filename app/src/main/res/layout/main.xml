@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <com.substarry.visualizer.VisualizerView
+        android:id="@+id/visualizerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#000" >
+    </com.substarry.visualizer.VisualizerView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="shapePressed"
+            android:text="Shape" >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="topPressed"
+            android:text="Top" >
+        </Button>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="middlePressed"
+            android:text="Middle" >
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="bottomPressed"
+            android:text="Bottom" >
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fadeAlphaTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fade Alpha"/>
+
+    <SeekBar
+        android:id="@+id/fadeAlphaSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/columnCountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Column Count"/>
+
+    <SeekBar
+        android:id="@+id/columnCountSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="512"/>
+
+    <TextView
+        android:id="@+id/mutipleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Mutiple"/>
+
+    <SeekBar
+        android:id="@+id/mutipleSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0">-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="columnDownPressed"-->
+            <!--android:text="column -" >-->
+        <!--</Button>-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="columnUpPressed"-->
+            <!--android:text="column +" >-->
+        <!--</Button>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0">-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="mutipleDownPressed"-->
+            <!--android:text="mutiple -" >-->
+        <!--</Button>-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="mutipleUpPressed"-->
+            <!--android:text="mutiple +" >-->
+        <!--</Button>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0">-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="fadeAlphaDownPressed"-->
+            <!--android:text="fadeAlpha -" >-->
+        <!--</Button>-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="fadeAlphaUpPressed"-->
+            <!--android:text="fadeAlpha +" >-->
+        <!--</Button>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:onClick="startPressed"
+            android:text="Start" >
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:onClick="stopPressed"
+            android:text="Stop" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
