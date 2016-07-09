@@ -132,7 +132,7 @@ public class MainActivity extends Activity {
 
   private void init()
   {
-    mPlayer = MediaPlayer.create(this, R.raw.music2);
+    mPlayer = MediaPlayer.create(this, R.raw.music);
     mPlayer.setLooping(true);
     mPlayer.start();
 
@@ -149,20 +149,20 @@ public class MainActivity extends Activity {
       mPlayer.release();
       mPlayer = null;
     }
-    
+
     if (mSilentPlayer != null)
     {
       mSilentPlayer.release();
       mSilentPlayer = null;
     }
   }
-  
+
   // Workaround (for Galaxy S4)
   //
   // "Visualization does not work on the new Galaxy devices"
   //    https://github.com/felixpalmer/android-visualizer/issues/5
   //
-  // NOTE: 
+  // NOTE:
   //   This code is not required for visualizing default "test.mp3" file,
   //   because tunnel player is used when duration is longer than 1 minute.
   //   (default "test.mp3" file: 8 seconds)
