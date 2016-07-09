@@ -66,11 +66,8 @@ public class BarRenderer extends Renderer {
     @Override
     public void onRender(Canvas canvas, FFTData data, Rect rect) {
         int divisions;
-        if (mColumnCount <= data.bytes.length / 4) {
-            //only show half frequency
-            divisions = ((int) ((data.bytes.length / 4.0f) / mColumnCount)) * 2;
-        } else if (mColumnCount <= data.bytes.length / 2) {
-            divisions = 2;
+        if (mColumnCount <= data.bytes.length / 2) {
+            divisions = ((int) ((data.bytes.length / 2.0f) / mColumnCount)) * 2;
         } else {
             mColumnCount = data.bytes.length / 2;
             divisions = 2;
