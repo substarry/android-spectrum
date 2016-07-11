@@ -90,9 +90,16 @@ public class PixelRenderer extends Renderer {
             float left = i * columnWidth + padding;
             float right = (i + 1) * columnWidth - padding;
 
-            int drawCount = (int) (columnHeight / columnWidth);
-            if (drawCount == 0) {
+            int drawCount = 0;
+            float count = columnHeight / columnWidth;
+            if(count >= 1){
+                drawCount = (int) count;
+            }
+            else if(count > 0){
                 drawCount = 1;
+            }
+            else{
+                continue;
             }
 
             float pixelHeight = columnHeight / drawCount;

@@ -89,9 +89,6 @@ public class BarRenderer extends Renderer {
             }
 
             float columnHeight = (dbValue) * (maxHeight / 128);
-            if(columnHeight == 0){
-                columnHeight = columnWidth * 0.1f;
-            }
 
             if (mPosition == POSITION_TOP) {
                 mFFTPoints[i * 4 + 1] = 0;
